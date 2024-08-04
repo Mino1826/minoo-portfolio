@@ -22,10 +22,9 @@ const Footer = () => {
         <hr />
         <div className="footer-bottom">
             <p className='footer-bottom-left'>2023 Minoo Khosravi. All rights reserved</p>
-            <div className="footer-bottom-right">
-                <p>Term of Services</p>
-                <p>Privacy Policy</p>
-                <p>Connect with me</p>
+            <div className="footer-bottom-right">        
+                {/* <button onClick={()=> <a href='linkedin.com/in/minoo-khosravi-353523241'/>}>Connect with me<a href='linkedin.com/in/minoo-khosravi-353523241'></a></button> */}
+                <a href='https://www.linkedin.com/in/minoo-khosravi-353523241'><button>Connect with Me</button></a>
             </div>
         </div>
       

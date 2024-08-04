@@ -1,7 +1,7 @@
 import "./myWork.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import mywork_Data from "../../assets/mywork_data";
-import arrow_icon from "../../assets/arrow_icon.svg";
+
 
 const MyWork = () => {
   return (
@@ -15,10 +15,7 @@ const MyWork = () => {
           return <img key={index} src={work.w_img} alt="" />;
         })}
       </div>
-      <div className="mywork-showmore">
-        <p>Show More</p>
-        <img src={arrow_icon} alt="" />
-      </div>
+      
     </div>
   );
 };
