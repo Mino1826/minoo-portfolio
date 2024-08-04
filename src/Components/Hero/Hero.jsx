@@ -17,7 +17,7 @@ const Hero = () => {
       </p>
       <div className="hero-action">
         <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect whit me</AnchorLink></div>
-        <div className="hero-resume">My resume</div>
+        
       </div>
     </div>
   );
