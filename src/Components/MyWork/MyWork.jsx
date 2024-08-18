@@ -1,6 +1,7 @@
 import "./myWork.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import mywork_Data from "../../assets/mywork_data";
+// import arrow_icon from '../../assets/arrow_icon.svg';
 
 
 const MyWork = () => {
@@ -12,12 +13,22 @@ const MyWork = () => {
       </div>
       <div className="mywork-container">
         {mywork_Data.map((work, index) => {
-          return <img key={index} src={work.w_img} alt="" />;
+          return (
+            <a key={index} href={work.w_href}>
+              <img src={work.w_img} alt="" /> 
+            </a>
+            
+          ) 
+          
         })}
-      </div>
-      
+        </div>
+      {/* <div className="mywork-showmore">
+        <p>Show More</p>
+        <img src={arrow_icon} alt="" />
+      </div> */}
+
     </div>
-  );
-};
+  )
+}
 
 export default MyWork;
