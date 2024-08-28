@@ -72,7 +72,7 @@
 }
 @media(max-width:768px){
     .footer{
-        margin: 50px 70px;
+        margin: 20px 70px;
     }
     .footer-top{
         flex-direction: column;
@@ -83,5 +83,8 @@
         flex-direction: column-reverse;
         margin-bottom: 50px;
     }
-    
+    .footer-subscribe{
+        padding: 10px 5px;
+        font-size: 15px;
+    }
 }
