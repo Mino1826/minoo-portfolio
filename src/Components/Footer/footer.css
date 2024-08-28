@@ -72,9 +72,13 @@
 }
 @media(max-width:768px){
     .footer{
-        margin:20px 50px;
+        margin:50px 70px;
     }
     .footer-top{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-top-right{
         flex-direction: column;
         gap: 20px;
     }
@@ -85,7 +89,7 @@
     }
     .footer-subscribe{
        
-       padding: 10px;
+       padding: 15px;
        
     }
 
