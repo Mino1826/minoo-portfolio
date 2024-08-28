@@ -72,15 +72,22 @@
 }
 @media(max-width:768px){
     .footer{
-        margin:50px 70px;
+        /* margin:50px 70px; */
+        text-align: center;
     }
     .footer-top{
         flex-direction: column;
         gap: 20px;
+        
     }
     .footer-top-right{
         flex-direction: column;
         gap: 20px;
+        
+    }
+    .footer-top-left p{
+        font-size: 18px
+
     }
     .footer-bottom{
         display: flex;
