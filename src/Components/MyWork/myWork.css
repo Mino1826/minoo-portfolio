@@ -59,7 +59,7 @@
 @media(max-width:768px){
     .mywork{
         gap: 50px;
-        margin: 50px 70px;
+        margin: 20px 70px;
         align-items: start;
     }
     .mywork-title h1{
