@@ -69,7 +69,7 @@
     .services{
         align-items: start;
         gap: 70px;
-        margin: 50px 70px;
+        margin: 50px 50px;
     }
     .services-title h1{
         padding: 0;
@@ -95,6 +95,5 @@
         grid-template-columns: 1fr  ;
         gap: 20px;
         margin: 10px auto;
-        padding: auto;
     }
 }
