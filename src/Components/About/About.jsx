@@ -3,56 +3,91 @@ import "./about.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import profile_img from "../../assets/img1.jpg";
 
+const skills = [
+  "Java",
+  "Spring Boot",
+  "Spring Data JPA",
+  "Hibernate",
+  "REST APIs",
+  "SQL",
+  "MongoDB",
+  "React",
+  "JavaScript",
+  "Node.js",
+  "Express.js",
+  "Python Basics",
+  "HTML",
+  "CSS",
+  "Tailwind CSS",
+  "Git",
+  "GitHub",
+  "Postman",
+  "Maven",
+];
+
 const About = () => {
   return (
-    <div className="about" id="about">
+    <section className="about" id="about">
       <div className="about-title">
         <h1>About Me</h1>
         <img src={theme_pattern} alt="" />
       </div>
-      <div className="about-sections">
-        <div className="about-left">
-          <img src={profile_img} alt="" />
-        </div>
-        <div className="about-right">
-          <div className="about-para">
-            <p>
-              After graduating with a degree in Russian Literature and
-              Interpreter, I embarked on a journey into web development through
-              self-study, online courses, and intensive bootcamps.
-            </p>
-            <p>
-              This transition has not only enhanced my technical skills but also
-              fostered a keen appreciation for continuous learning and
-              adaptation in the dynamic field of technology.
-            </p>
-          </div>
-          <div className="about-skills">
-            <div className="about-skill"><p>HTML & CSS <hr style={{width:'70%'}} /></p></div>
-            <div className="about-skill"><p>React JS <hr style={{width:'40%'}} /></p></div>
-            <div className="about-skill"><p>JavaScript<hr style={{width:'50%'}} /></p></div>
-            <div className="about-skill"><p>Node.js <hr style={{width:'30%'}} /></p></div>
-          </div>
-        </div>
+
+      <div className="about-intro">
+        <p>
+          I am a Junior Full Stack Developer with a strong interest in backend
+          development using Java and Spring Boot. I enjoy building REST APIs,
+          solving problems, and improving my skills through hands-on projects.
+        </p>
+
+        <p>
+          After graduating with a degree in Russian Literature and
+          Interpretation, I transitioned into software development through
+          self-study, online courses, and bootcamps. Since then, I have built
+          several projects using Java, Spring Boot, React, JavaScript, Node.js,
+          Express.js, SQL, and MongoDB, while also learning Python basics.
+        </p>
       </div>
-      <div className="about-achievements">
-        <div className="about-achievement">
-            <h1>1+</h1>
-            <p>YEARS OF EXPERIENCE</p>
-        </div>
-        <hr />
-        <div className="about-achievement">
-            <h1>10+</h1>
-            <p>PROJECTS COMPLETED</p>
-        </div>
-        <hr />
-        <div className="about-achievement">
-            <h1>5+</h1>
-            <p>HAPPY CLIENTS</p>
+
+      <div className="about-content">
+        <div className="about-image">
+          <img src={profile_img} alt="Mino Khosravi" />
         </div>
 
+        <div className="skills-section">
+          <h2>Skills & Tools</h2>
+
+          <div className="skills-list">
+            {skills.map((skill) => (
+              <span className="skill-chip" key={skill}>
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+
+      <div className="about-achievements">
+        <div className="about-achievement">
+          <h1>10+</h1>
+          <p>Projects Completed</p>
+        </div>
+
+        <hr />
+
+        <div className="about-achievement">
+          <h1>15+</h1>
+          <p>Technologies Learned</p>
+        </div>
+
+        <hr />
+
+        <div className="about-achievement">
+          <h1>2+</h1>
+          <p>Years of Learning</p>
+        </div>
+      </div>
+    </section>
   );
 };
 

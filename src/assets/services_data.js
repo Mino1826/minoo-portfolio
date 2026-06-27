@@ -1,30 +1,40 @@
-const Services_Data = [
-    {
-        s_no:"01",
-        s_name:"Web design",
-        s_desc:"I offer professional web design services that focus on creating user-friendly and visually appealing interfaces. My designs prioritize user experience (UX) and ensure that your website is both attractive and functional."
-    },
-    {
-        s_no:"02",
-        s_name:"App Design",
-        s_desc:"I specialize in creating user-friendly applications that deliver exceptional user experiences. My design process focuses on understanding user needs and behaviors to develop intuitive interfaces that enhance usability."
-    },
-    
-    {
-        s_no:"03",
-        s_name:"UI/UX Design",
-        s_desc:"I specialize in creating intuitive and engaging user interfaces (UI) and user experiences (UX) for applications and websites. My design process emphasizes understanding user needs, ensuring that every design decision enhances usability and satisfaction."
-    },
-    {
-        s_no:"04",
-        s_name:"Troubleshooting and test",
-        s_desc:"My troubleshooting process involves identifying and resolving technical issues through thorough analysis, which helps minimize user disruptions. I also specialize in providing troubleshooting and testing services to ensure that applications operate completely and without issues."
-    },
-    {
-        s_no:"05",
-        s_name:"Web Development",
-        s_desc:"I specialize in developing dynamic and responsive websites and web applications. My development process emphasizes clean code, scalability, and performance to deliver the best user experience."
-    },
-]
- 
-export default Services_Data;
+const services_data = [
+  {
+    s_no: "01",
+    s_name: "Backend Development",
+    s_desc:
+      "Building RESTful APIs using Java, Spring Boot, Spring Data JPA, Hibernate, SQL, and MongoDB.",
+  },
+  {
+    s_no: "02",
+    s_name: "Frontend Development",
+    s_desc:
+      "Creating responsive user interfaces with React, JavaScript, HTML, CSS, and Tailwind CSS.",
+  },
+  {
+    s_no: "03",
+    s_name: "Full Stack Projects",
+    s_desc:
+      "Developing complete web applications by connecting frontend, backend, APIs, and databases.",
+  },
+  {
+    s_no: "04",
+    s_name: "API Testing",
+    s_desc:
+      "Testing and debugging REST APIs using Postman and improving API design through practice.",
+  },
+  {
+    s_no: "05",
+    s_name: "Database Work",
+    s_desc:
+      "Working with relational databases through JPA/Hibernate and building basic MongoDB-based features.",
+  },
+  {
+    s_no: "06",
+    s_name: "Continuous Learning",
+    s_desc:
+      "Learning Spring Security, JWT, Docker basics, testing, and improving Java backend development skills.",
+  },
+];
+
+export default services_data;

@@ -1,25 +1,33 @@
-
 import "./hero.css";
 import profile_img from "../../assets/minoo.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
   return (
-    <div className="hero" id="hero">
-      <img src={profile_img} alt="" />
+    <section className="hero" id="hero">
+      <img src={profile_img} alt="Minoo Khosravi" className="hero-img" />
+
       <h1>
-        <span>I'm Minoo Khosravi,</span> frontend developer based in Iran
+        <span>I'm Minoo Khosravi,</span> Junior Full Stack Developer
       </h1>
+
       <p>
-        I am frontend developer from Tehran. Motivated and willing to learn, I
-        thrive in challenging environments because they provide invaluable
-        opportunities for growth.
+        I build web applications using Java, Spring Boot, React, JavaScript,
+        Node.js, SQL, and MongoDB. I am passionate about backend development,
+        REST APIs, clean code, and continuously improving through hands-on
+        projects.
       </p>
+
       <div className="hero-action">
-        <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect whit me</AnchorLink></div>
-        
+        <AnchorLink className="hero-connect" offset={50} href="#contact">
+          Connect with me
+        </AnchorLink>
+
+        <AnchorLink className="hero-resume" offset={50} href="#projects">
+          View Projects
+        </AnchorLink>
       </div>
-    </div>
+    </section>
   );
 };
 
